@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import kotlin.coroutines.coroutineContext
 
 class HomeActivity : AppCompatActivity() {
 
@@ -26,6 +28,7 @@ class HomeActivity : AppCompatActivity() {
             chooseCatergory(getString(R.string.home_desert))
         }
 
+
     }
 
     override fun onStop(){
@@ -45,4 +48,6 @@ class HomeActivity : AppCompatActivity() {
         const val CATEGORY_KEY = "category"
     }
 
+
 }
+
