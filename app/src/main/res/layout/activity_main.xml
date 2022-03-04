@@ -4,53 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#CED1473D"
+    android:backgroundTintMode="add"
+    tools:context=".HomeActivity">
+
 
     <Button
-        android:id="@+id/entree"
+        android:id="@+id/entrées"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ENTREE"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="262dp" />
+        android:background="#4CAF50"
+        android:backgroundTint="#009688"
+        android:text="Entrées"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/plat"
+        android:id="@+id/plats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PLAT"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="341dp" />
+        android:background="#009688"
+        android:text="Plats"
+        app:layout_constraintBottom_toTopOf="@+id/desserts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrées" />
 
     <Button
-        android:id="@+id/dessert"
+        android:id="@+id/desserts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DESSERT"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="421dp" />
+        android:background="#009688"
+        android:text="Desserts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entrées" />
 
     <TextView
         android:id="@+id/titre"
-        android:layout_width="105dp"
-        android:layout_height="31dp"
-        android:text="DroidRestaurant"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="42dp" />
+        android:layout_width="148dp"
+        android:layout_height="36dp"
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/img"
-        tools:layout_editor_absoluteX="304dp"
-        tools:layout_editor_absoluteY="95dp" />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        tools:text="DroidRestaurant" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="122dp"
         android:layout_height="200dp"
-        app:srcCompat="@drawable/img_1"
-        tools:layout_editor_absoluteX="273dp"
-        tools:layout_editor_absoluteY="62dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@drawable/fond" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
