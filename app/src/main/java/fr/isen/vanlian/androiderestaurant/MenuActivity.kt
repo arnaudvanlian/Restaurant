@@ -47,10 +47,10 @@ class MenuActivity : AppCompatActivity() {
 
                 val items = menu.data.firstOrNull{ it.name_fr == category }?.items ?: arrayListOf() // "?."  propage le null et "?:" si c'est null, Si il n'a pas trouvé d'élement par rapport à la catégorie,il renvoie null
                 val adapter = CategoryAdapter(items) {
-                 //   val intent = Intent(this@MenuActivity, DetailsActivity::class.java)
+                    val intent = Intent(this@MenuActivity, DetailsActivity::class.java)
 
-                 //   intent.putExtra(DETAILS_KEY, it)
-                 //   startActivity(intent)
+                    intent.putExtra(DETAILS_KEY, it)
+                    startActivity(intent)
                 }
                 //binding.loaderIcon.visibility = View.GONE
                 binding.categoryListe.adapter = adapter

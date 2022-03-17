@@ -16,6 +16,9 @@
             android:name=".DishActivity"
             android:exported="false" />
         <activity
+            android:name=".DetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="false" />
         <activity

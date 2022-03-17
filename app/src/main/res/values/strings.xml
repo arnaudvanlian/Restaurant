@@ -5,5 +5,7 @@
     <string name="home_desert">Desserts</string>
     <string name="name_dish">description</string>
     <string name="price_dish">prix</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
