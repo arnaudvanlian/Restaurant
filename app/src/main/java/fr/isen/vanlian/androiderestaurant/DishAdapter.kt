@@ -15,7 +15,7 @@ class DishAdapter(private val menu : ArrayList<String>): RecyclerView.Adapter<Di
 
     override fun onBindViewHolder(holder: DishHolder, position: Int) {
         val dishMeal = menu[position]
-        val itemDescription = holder.view.findViewById<TextView>(R.id.textView)
+        val itemDescription = holder.view.findViewById<TextView>(R.id.nameDish)
         itemDescription.text = dishMeal
     }
 

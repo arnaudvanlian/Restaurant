@@ -3,4 +3,7 @@
     <string name="home_starters">Entrées</string>
     <string name="home_dish">Plats</string>
     <string name="home_desert">Desserts</string>
+    <string name="name_dish">description</string>
+    <string name="price_dish">prix</string>
+
 </resources>

@@ -40,7 +40,7 @@ class HomeActivity : AppCompatActivity() {
         Log.d("HomeActivity","L'activité est dértuite")
     }
     private fun chooseCatergory(string: String) {
-        val intent = Intent(this, DishActivity::class.java)
+        val intent = Intent(this, MenuActivity::class.java)
         intent.putExtra(CATEGORY_KEY,string)
         startActivity(intent)
     }
