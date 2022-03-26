@@ -9,6 +9,18 @@
     tools:context=".HomeActivity">
 
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="122dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566"
+        app:srcCompat="@drawable/fond" />
+
     <Button
         android:id="@+id/entrées"
         android:layout_width="wrap_content"
@@ -16,11 +28,11 @@
         android:background="#4CAF50"
         android:backgroundTint="#009688"
         android:text="Entrées"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -31,8 +43,10 @@
         android:text="Plats"
         app:layout_constraintBottom_toTopOf="@+id/desserts"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/entrées" />
+        app:layout_constraintTop_toBottomOf="@+id/entrées"
+        app:layout_constraintVertical_bias="0.506" />
 
     <Button
         android:id="@+id/desserts"
@@ -42,8 +56,10 @@
         android:text="Desserts"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/entrées" />
+        app:layout_constraintTop_toBottomOf="@+id/entrées"
+        app:layout_constraintVertical_bias="0.523" />
 
     <TextView
         android:id="@+id/titre"
@@ -65,11 +81,23 @@
         android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintVertical_bias="0.566"
         app:srcCompat="@drawable/fond" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enjoy your Meal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
